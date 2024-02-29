@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTSPPlayerApp.Android", "RTSPPlayerApp.Android\RTSPPlayerApp.Android.csproj", "{138E2579-0842-473C-9769-40A06A9AA66B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTSPPlayerApp", "RTSPPlayerApp\RTSPPlayerApp.csproj", "{0514332D-D27C-4926-90D7-227F16BA2343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTSPPlayerBindingLibrary", "..\RTSPPlayerBindingLibrary\RTSPPlayerBindingLibrary.csproj", "{BE3FE537-F4A4-4208-93D4-422E42BBABD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{138E2579-0842-473C-9769-40A06A9AA66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{138E2579-0842-473C-9769-40A06A9AA66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{138E2579-0842-473C-9769-40A06A9AA66B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{138E2579-0842-473C-9769-40A06A9AA66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{138E2579-0842-473C-9769-40A06A9AA66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{138E2579-0842-473C-9769-40A06A9AA66B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0514332D-D27C-4926-90D7-227F16BA2343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0514332D-D27C-4926-90D7-227F16BA2343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0514332D-D27C-4926-90D7-227F16BA2343}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0514332D-D27C-4926-90D7-227F16BA2343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0514332D-D27C-4926-90D7-227F16BA2343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0514332D-D27C-4926-90D7-227F16BA2343}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BE3FE537-F4A4-4208-93D4-422E42BBABD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3FE537-F4A4-4208-93D4-422E42BBABD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3FE537-F4A4-4208-93D4-422E42BBABD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3FE537-F4A4-4208-93D4-422E42BBABD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5B3DD07-6DF7-4397-A78D-14315A72C704}
+	EndGlobalSection
+EndGlobal
