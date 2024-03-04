@@ -17,9 +17,9 @@ import com.google.android.material.progressindicator.CircularProgressIndicator
  * A custom dialog box that extends the DialogFragment class.
  *
  * This dialog allows you to display information with optional buttons, a customizable title,
- * and provides the ability to listen to button click events.
+ * and provides the ability to listen to button clic
+ *  * @param title The title of the dialog.k events.
  *
- * @param title The title of the dialog.
  * @param info The information to display in the dialog (optional).
  * @param buttonMode The mode for displaying buttons (default is InfoDialogButtonMode.Both).
  * @param nameBtnCancel The text for the cancel button (optional).

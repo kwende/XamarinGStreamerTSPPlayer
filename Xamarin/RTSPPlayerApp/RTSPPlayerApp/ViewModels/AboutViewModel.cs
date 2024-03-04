@@ -1,6 +1,4 @@
-﻿using System;
-using System.Windows.Input;
-using Xamarin.Essentials;
+﻿using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace RTSPPlayerApp.ViewModels
@@ -10,7 +8,10 @@ namespace RTSPPlayerApp.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+            OpenWebCommand = new Command(async () =>
+            {
+                App.Something.DoIt();
+            });
         }
 
         public ICommand OpenWebCommand { get; }

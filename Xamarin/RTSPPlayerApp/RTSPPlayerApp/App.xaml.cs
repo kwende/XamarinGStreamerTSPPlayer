@@ -1,20 +1,21 @@
 ﻿using RTSPPlayerApp.Services;
-using RTSPPlayerApp.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace RTSPPlayerApp
 {
     public partial class App : Application
     {
 
-        public App()
+        public static ISomething Something { get; private set; }
+
+        public App(ISomething something)
         {
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+            Something = something;
             MainPage = new AppShell();
+
         }
 
         protected override void OnStart()

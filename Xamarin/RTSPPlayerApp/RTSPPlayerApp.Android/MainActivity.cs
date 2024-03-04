@@ -10,11 +10,16 @@ namespace RTSPPlayerApp.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            //Com.Ocuvera.Rtsplibrary.Poop p = new Com.Ocuvera.Rtsplibrary.Poop();
+            //Com.Ocuvera.Rtsplibrary.MyDialogBox b = new Com.Ocuvera.Rtsplibrary.MyDialogBox();
+            //b.Show(this.SupportFragmentManager, null);
+            //int ret = p.DoPoop();
+
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+            LoadApplication(new App(new SomethingImpl(this.SupportFragmentManager)));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
