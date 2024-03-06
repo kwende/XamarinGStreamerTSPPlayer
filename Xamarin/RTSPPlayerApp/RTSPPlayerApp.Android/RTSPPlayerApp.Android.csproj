@@ -51,9 +51,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
-    <Reference Include="RTSPPlayerBindingLibrary">
-      <HintPath>..\..\RTSPPlayerBindingLibrary\bin\Debug\RTSPPlayerBindingLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
@@ -72,6 +69,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndroidPlayerRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +102,10 @@
     <AndroidResource Include="Resources\drawable\icon_feed.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\RTSPPlayerBindingLibrary\RTSPPlayerBindingLibrary.csproj">
+      <Project>{be3fe537-f4a4-4208-93d4-422e42bbabd4}</Project>
+      <Name>RTSPPlayerBindingLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RTSPPlayerApp\RTSPPlayerApp.csproj">
       <Project>{CD60FB42-7B23-4038-BBC0-E70134D0E7E6}</Project>
       <Name>RTSPPlayerApp</Name>

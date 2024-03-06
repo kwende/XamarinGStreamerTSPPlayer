@@ -1,20 +1,33 @@
-﻿using AndroidX.Fragment.App;
+﻿using Android.Content;
+using AndroidX.Fragment.App;
 
 namespace RTSPPlayerApp.Droid
 {
     public class SomethingImpl : ISomething
     {
         private FragmentManager _manager;
+        private Context _context;
 
-        public SomethingImpl(FragmentManager manager)
+        public SomethingImpl(FragmentManager manager, Context context)
         {
             _manager = manager;
+            _context = context;
         }
 
-        public void DoIt()
+        public string DoIt()
         {
-            Com.Ocuvera.Rtsplibrary.MyDialogBox b = new Com.Ocuvera.Rtsplibrary.MyDialogBox();
-            b.Show(_manager, null);
+            //Org.Freedesktop.Gstreamer.GStreamer.Init(_context);
+
+            //Com.Ocuvera.Rtsplibrary.Poop p = new Com.Ocuvera.Rtsplibrary.Poop();
+            //string version = p.GStreamerInfo;
+
+            //p.NativeClassInit();
+            //p.NativeInit();
+
+            //bool isInitialized = (bool)p.IsGStreamerInitialized;
+            //return version;
+            return "";
+
         }
     }
 }

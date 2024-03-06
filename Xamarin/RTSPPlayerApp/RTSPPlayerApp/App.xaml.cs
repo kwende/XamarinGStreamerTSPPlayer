@@ -15,7 +15,6 @@ namespace RTSPPlayerApp
             DependencyService.Register<MockDataStore>();
             Something = something;
             MainPage = new AppShell();
-
         }
 
         protected override void OnStart()

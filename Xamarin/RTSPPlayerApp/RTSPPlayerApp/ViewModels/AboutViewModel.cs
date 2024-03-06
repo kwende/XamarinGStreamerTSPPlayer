@@ -10,8 +10,16 @@ namespace RTSPPlayerApp.ViewModels
             Title = "About";
             OpenWebCommand = new Command(async () =>
             {
-                App.Something.DoIt();
+                string ret = App.Something.DoIt();
+                Text = ret;
             });
+        }
+
+        private string _text;
+        public string Text
+        {
+            get => _text;
+            set => SetProperty(ref _text, value);
         }
 
         public ICommand OpenWebCommand { get; }

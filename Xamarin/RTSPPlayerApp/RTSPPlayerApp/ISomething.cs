@@ -2,6 +2,6 @@
 {
     public interface ISomething
     {
-        void DoIt();
+        string DoIt();
     }
 }
